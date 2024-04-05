@@ -33,7 +33,7 @@ on:
       - '!packages/llm/huggingface_hub/docs.md'
 jobs:
   llama_cpp-gguf_jp60:
-    runs-on: [self-hosted, jetson, jp60]
+    runs-on: [ubuntu-latest]
     steps:
       - run: |
          cat /etc/nv_tegra_release 
