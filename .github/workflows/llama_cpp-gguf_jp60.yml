@@ -35,8 +35,8 @@ jobs:
   llama_cpp-gguf_jp60:
     runs-on: [ubuntu-latest]
     steps:
-      - run: |
-         cat /etc/nv_tegra_release 
+     # - run: |
+     #    cat /etc/nv_tegra_release 
       - name: "Checkout ${{ github.repository }} SHA=${{ github.sha }}" 
         run: |
          echo "$RUNNER_WORKSPACE" 
