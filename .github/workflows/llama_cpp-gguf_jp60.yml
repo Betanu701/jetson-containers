@@ -41,12 +41,12 @@ jobs:
         run: |
          echo "$RUNNER_WORKSPACE" 
          cd $RUNNER_WORKSPACE 
-         git config --global user.email "dustinf@nvidia.com" 
-         git config --global user.name "Dustin Franklin" 
+         git config --global user.email "betanu701@gmail.com" 
+         git config --global user.name "betanu701" 
          git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY || echo 'repo already cloned or another error encountered' 
          cd jetson-containers 
          git fetch origin 
          git checkout $GITHUB_SHA 
          git status 
          ls -a 
-      - run: ./build.sh --name=runner/ --push=dustynv llama_cpp:gguf
+      - run: ./build.sh --name=runner/ --push=betanu701 llama_cpp:gguf
